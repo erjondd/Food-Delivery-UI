@@ -7,6 +7,7 @@ const Navbar = () => {
       <img src={logo} />
       <input type="text" placeholder="Search" />
       <CartIcon />
+      s
       <img src={card} />
     </div>
   );
