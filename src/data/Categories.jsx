@@ -2,32 +2,32 @@
 export const CATEGORIES = [
     {
         name: 'Pizza',
-        imageUrl: '/pizza.svg',
+        imageUrl: 'src/assets/pizza.svg',
         active: true,
     },
     {
         name: 'Burger',
-        imageUrl: '/burger.svg',
+        imageUrl: 'src/assets/burger.svg',
         active: true,
     },
     {
         name: 'BBQ',
-        imageUrl: '/meat.svg',
+        imageUrl: 'src/assets/meat.svg',
         active: false,
     },
     {
         name: 'Sushi',
-        imageUrl: '/sushi.svg',
+        imageUrl: 'src/assets/sushi.svg',
         active: true,
     },
     {
         name: 'Vegan',
-        imageUrl: '/broccoli.svg',
+        imageUrl: 'src/assets/broccoli.svg',
         active: false,
     },
     {
         name: 'Desert',
-        imageUrl: '/cake.svg',
+        imageUrl: 'src/assets/cake.svg',
         active: false,
     }
 ]  
