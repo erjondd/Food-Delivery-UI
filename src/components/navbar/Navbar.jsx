@@ -1,10 +1,9 @@
 import styles from '../../styles/navbar.module.scss'
 import Logo from '../../assets/logo.png'
 import SearchIcon from '../../assets/search.svg'
-import Profile from '../../assets/profile.png'
-import ShoppingImg from '../../assets/shopping-bag.svg'
+// import Profile from '../../assets/profile.png'
+// import ShoppingImg from '../../assets/shopping-bag.svg'
 function Navbar() {
-    console.log("erjon")
     return (
         <>
             <div className={styles.header} >
@@ -37,17 +36,17 @@ function Navbar() {
                                     </li>
                                 </ul>
                             </div>
-                            <div className={styles.cart}>
-                                <div className={styles.cartIcon}>
+                            {/* <div className={styles.shopping}>
+                                <div className={styles.shoppingCart}>
                                     <img src={ShoppingImg} />
-                                    <span>
+                                    <span className={styles.shoppingNumber}>
                                         4
                                     </span>
                                 </div>
                                 <div className={styles.avatar}>
-                                    <img src={Profile} />
+                                    <img src={Profile} className={styles.avatarImage} />
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

@@ -1,13 +1,17 @@
 import { useState, useEffect } from 'react';
 import "./styles/global.scss";
 import Navbar from './components/navbar/Navbar'
+import Offers from './components/offers/Offers'
+
 function App() {
 
   return (
     <>
-      <Navbar />
-
-      <div className="container">
+      <div>
+        <Navbar />
+        <div className="container">
+          <Offers />
+        </div >
       </div>
     </>
   );
