@@ -5,6 +5,24 @@
 }
 body {
   margin: 0;
+  ul {
+    display: flex;
+    list-style-type: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start: 00px;
+
+    li {
+      display: block;
+      list-style-type: none;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      padding-inline-start: 0px;
+    }
+  }
+}
+input {
+  outline: none;
 }
 .container {
   max-width: 1200px;

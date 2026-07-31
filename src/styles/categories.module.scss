@@ -1,0 +1,33 @@
+.categories {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+  }
+
+  .oneCategory {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80px;
+    border: 1px solid #edeef2;
+    border-radius: 16px;
+    cursor: pointer;
+    justify-content: center;
+    &.active {
+      background-color: #f3f4ff;
+      border: 2px solid #697bff;
+      .title {
+        color: #4e60ff;
+      }
+    }
+    &:hover {
+      background-color: #f8f9ff;
+      border-color: #697bff;
+    }
+  }
+}
