@@ -1,16 +1,43 @@
-# React + Vite
+# Food Delivery UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive Food Delivery homepage built as a technical assignment for the Front-end Developer position at Study Together.
 
-Currently, two official plugins are available:
+## 📋 Assignment
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The goal was to recreate the **1.1 Home** screen from the provided Figma design.
 
-## React Compiler
+### Requirements
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Build only the Home page (Login and Settings pages were not required)
+- Make the layout fully responsive based on the mobile design
+- Use React or Next.js
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- JavaScript
+- SCSS Modules
+- CSS Flexbox & Grid
+
+## ✨ Features
+
+- Responsive design
+- Category filtering
+- Restaurant cards
+- Modern, clean UI
+- Component-based architecture
+
+## 🎨 Design
+
+Figma Design:
+https://www.figma.com/file/Ty8fOd7H801O4Ahdugu5kZ/Food-Delivery-UI---Free/duplicate
+
+## 🛠️ Installation
+
+```bash
+git clone https://github.com/yourusername/food-delivery-ui.git
+cd food-delivery-ui
+npm install
+npm run dev
+```
