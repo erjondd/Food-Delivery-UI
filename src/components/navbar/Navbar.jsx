@@ -16,6 +16,8 @@ function Navbar() {
                         <div className={styles.search}>
                             <input type="text" placeholder="Search" />
                             <img src={SearchIcon} className={styles.searchIcon} />
+
+
                         </div>
                     </div>
                     <button
