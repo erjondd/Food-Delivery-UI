@@ -1,16 +1,20 @@
-import styles from '../../styles/categories.module.scss'
-import { CATEGORIES } from "../../data/Categories";
+import styles from "../../styles/categories.module.scss";
 
-
-function Categroy() {
+function Categroy({ categories, toggleCategory }) {
     return (
         <div className={styles.categories}>
             <ul>
-                {CATEGORIES.map((category, index) => (
-                    <li key={index} onClick={() => index.filter({ ...category, active: !category.active })} className={`${category.active ? styles.active : ''} ${styles.oneCategory}`}>
+                {categories.map((category, index) => (
+                    <li
+                        key={index}
+                        onClick={() => toggleCategory(index)}
+                        className={`${styles.oneCategory} ${category.active ? styles.active : ""
+                            }`}
+                    >
                         <div className={styles.icon}>
-                            <img src={category.imageUrl} />
+                            <img src={category.imageUrl} alt={category.name} />
                         </div>
+
                         <div className={styles.title}>
                             {category.name}
                         </div>
@@ -18,6 +22,7 @@ function Categroy() {
                 ))}
             </ul>
         </div>
-    )
+    );
 }
+
 export default Categroy;

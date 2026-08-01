@@ -1,5 +1,8 @@
 .restaurants {
   margin-bottom: 50px;
+  min-height: 723px;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
@@ -75,7 +78,7 @@
 .itemClock {
   position: relative;
   width: 12px;
-  height: 12px;
+  height: 20px;
   margin-right: 6px;
 }
 
@@ -154,14 +157,41 @@
 .listCategoryIcon {
   position: relative;
   display: inline-block;
-  width: 12px;
-  height: 12px;
   margin-right: 8px;
   margin-top: 1px;
+
+  img {
+    height: 18px;
+    width: 18px;
+  }
 }
 
 .listCategoryLabel {
   font-size: 12px;
   font-weight: 500;
   color: #545563;
+  align-content: center;
+}
+.noRestaurants {
+  font-size: 16px;
+  font-weight: bold;
+  color: #43437a;
+}
+
+@media (max-width: 768px) {
+  .list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+    gap: 15px;
+  }
 }

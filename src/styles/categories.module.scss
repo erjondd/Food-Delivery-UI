@@ -6,6 +6,12 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 15px;
+    @media (max-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 15px;
+      gap: 15px;
+    }
   }
 
   .oneCategory {
@@ -14,10 +20,15 @@
     align-items: center;
     flex-direction: column;
     height: 80px;
-    border: 1px solid #edeef2;
+    border: 2px solid #edeef2;
     border-radius: 16px;
     cursor: pointer;
     justify-content: center;
+    .title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #545563;
+    }
     &.active {
       background-color: #f3f4ff;
       border: 2px solid #697bff;

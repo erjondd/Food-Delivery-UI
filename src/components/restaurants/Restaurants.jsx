@@ -1,15 +1,13 @@
 import styles from '../../styles/restaurants.module.scss'
-import { RESTAURANTS } from "../../data/Restaurants";
 
-
-function Restaurants() {
+function Restaurants({ restaurants }) {
     return (
         <div className={styles.restaurants}>
             <div className={styles.title}>
                 Nearby restaurants
             </div>
             <div className={styles.list}>
-                {RESTAURANTS.map((restaurant, index) =>
+                {restaurants.map((restaurant, index) =>
                     <div className={styles.listItem} key={index}>
                         <div className={styles.image}>
                             <img src={restaurant.imageUrl} />
@@ -64,7 +62,10 @@ function Restaurants() {
 
                 )}
             </div>
+            {restaurants.length === 0 &&
+                <div className={styles.noRestaurants}>No restaurants found!</div>}
         </div>
+
     )
 }
 export default Restaurants;
