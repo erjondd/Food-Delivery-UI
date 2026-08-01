@@ -5,7 +5,7 @@ import Offers from './components/offers/Offers'
 import Restaurants from './components/restaurants/Restaurants'
 import { CATEGORIES } from "./data/Categories";
 import { RESTAURANTS } from "./data/Restaurants";
-import { filterRestaurants } from "./utility/RestaurantFilters";
+import { filterRestaurants, getActiveCategoryNames } from "./utility/RestaurantFilters";
 import { useState } from "react";
 
 function App() {
@@ -19,8 +19,10 @@ function App() {
     );
   }
 
-  const filteredRestaurants = filterRestaurants(RESTAURANTS, categories);
-
+  const filteredRestaurants = filterRestaurants(
+    RESTAURANTS,
+    getActiveCategoryNames(categories)
+  );
   return (
     <>
       <div>
