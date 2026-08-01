@@ -41,6 +41,7 @@ function Navbar() {
                         </div>
                     </div>
                 </div>
+                <div className={styles.nothing}></div>
             </div>
         </div>
     );
