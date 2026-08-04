@@ -1,6 +1,6 @@
 import styles from '../../styles/navbar.module.scss'
-import Logo from '../../assets/logo.png'
-import SearchIcon from '../../assets/search.svg'
+import Logo from '../../../public/logo.svg'
+import SearchIcon from '../../../public/search.svg'
 import { useState } from 'react'
 
 function Navbar() {
@@ -16,8 +16,6 @@ function Navbar() {
                         <div className={styles.search}>
                             <input type="text" placeholder="Search" />
                             <img src={SearchIcon} className={styles.searchIcon} />
-
-
                         </div>
                     </div>
                     <button
