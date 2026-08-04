@@ -1,6 +1,6 @@
 import styles from '../../styles/offers.module.scss'
-import Burger from '../../assets/offert-burger.png'
-import Cake from '../../assets/offert-cake.png'
+import Burger from '../../../public/offert-burger.png'
+import Cake from '../../../public/offert-cake.png'
 
 function Offers() {
     return (
