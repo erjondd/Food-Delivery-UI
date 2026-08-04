@@ -1,13 +1,11 @@
 import styles from '../../styles/offers.module.scss'
 import Burger from '../../../public/offert-burger.png'
-import Cake from '../../../public/offert-cake.png'
 
 function Offers() {
     return (
         <div className={styles.offers}>
             <div className={styles.desserts}>
                 <div className={styles.image}>
-                    <img src={Cake} />
                 </div>
                 <div className={styles.rightSide}>
                     <div className={styles.title}>
