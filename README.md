@@ -1,3 +1,5 @@
+Vercel deploy link: https://food-delivery-ui-one.vercel.app
+
 # Food Delivery UI
 
 A responsive Food Delivery homepage built as a technical assignment for the Front-end Developer position at Study Together.
