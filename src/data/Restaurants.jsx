@@ -2,7 +2,7 @@
 export const RESTAURANTS = [
     {
         title: "Royal Sushi House",
-        imageUrl: "/royal-sushi-house.png",
+        imageUrl: "/royal-sushi.png",
         isFeatures: true,
         cartItems: 0,
         prepareTime: "30-40 min",

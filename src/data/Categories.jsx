@@ -2,12 +2,12 @@
 export const CATEGORIES = [
     {
         name: 'Pizza',
-        imageUrl: '/pizza.svg',
+        imageUrl: '../assets/pizza.svg',
         active: true,
     },
     {
         name: 'Burger',
-        imageUrl: '/burger.svg',
+        imageUrl: '../assets/burger.svg',
         active: true,
     },
     {

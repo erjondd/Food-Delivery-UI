@@ -3,6 +3,20 @@
 :root {
   font-family: "Nunito";
 }
+:root {
+  --bg-color: white;
+  --text-color: black;
+}
+
+[data-theme="dark"] {
+  --bg-color: black;
+  --text-color: white;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
 body {
   margin: 0;
   ul {
