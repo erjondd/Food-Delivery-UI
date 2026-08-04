@@ -10,6 +10,7 @@ import { useState } from "react";
 
 function App() {
   const [categories, setCategories] = useState(CATEGORIES);
+  const [search, setSearch] = useState("");
 
   function toggleCategory(index) {
     setCategories((prev) =>
@@ -21,12 +22,13 @@ function App() {
 
   const filteredRestaurants = filterRestaurants(
     RESTAURANTS,
-    getActiveCategoryNames(categories)
+    getActiveCategoryNames(categories),
+    search
   );
   return (
     <>
       <div>
-        <Navbar />
+        <Navbar search={search} setSearch={setSearch} />
         <div className="container">
           <Offers />
 

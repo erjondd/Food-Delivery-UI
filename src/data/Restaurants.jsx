@@ -10,7 +10,7 @@ export const RESTAURANTS = [
         categories: [
             {
                 name: "Sushi",
-                imageUrl: "sushi.svg",
+                imageUrl: "/sushi.svg",
                 active: false,
             }
         ]

@@ -3,7 +3,7 @@ import Logo from '../../../public/logo.svg'
 import SearchIcon from '../../../public/search.svg'
 import { useState } from 'react'
 
-function Navbar() {
+function Navbar({ search, setSearch }) {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
         <div className={styles.header}>
@@ -14,7 +14,8 @@ function Navbar() {
                             <img src={Logo} alt="Logo" />
                         </div>
                         <div className={styles.search}>
-                            <input type="text" placeholder="Search" />
+                            <input type="text" placeholder="Search" value={search}
+                                onChange={(e) => setSearch(e.target.value)} />
                             <img src={SearchIcon} className={styles.searchIcon} />
                         </div>
                     </div>

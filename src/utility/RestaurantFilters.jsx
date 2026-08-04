@@ -1,20 +1,25 @@
-export const filterRestaurants = (restaurants, categories) => {
-    if (categories.length === 0) {
-        return restaurants;
-    }
+export const filterRestaurants = (
+    restaurants,
+    categories,
+    search = ""
+) => {
+    return restaurants.filter((restaurant) => {
+        // Category filter
+        const categoryMatch =
+            categories.length === 0 ||
+            restaurant.categories.some((c) => categories.includes(c.name));
 
-    const _restaurants = [];
+        // Search filter
+        const searchMatch = restaurant.title
+            .toLowerCase()
+            .includes(search.toLowerCase());
 
-
-    restaurants.forEach((restaurant) => {
-        const _matchCategories = restaurant.categories.filter((c) => categories.includes(c.name));
-        if (_matchCategories.length > 0) {
-            return _restaurants.push(restaurant);
-        }
-    })
-    return _restaurants
-}
+        return categoryMatch && searchMatch;
+    });
+};
 
 export const getActiveCategoryNames = (categories) => {
-    return categories.filter((f) => f.active).map((category) => category.name);
-}
+    return categories
+        .filter((category) => category.active)
+        .map((category) => category.name);
+};

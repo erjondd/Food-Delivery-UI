@@ -32,7 +32,7 @@ function Restaurants({ restaurants }) {
                             <div className={styles.listTime}>
                                 <div className={styles.label}>
                                     <div className={styles.itemClock}>
-                                        <img src="src/assets/clock.svg" />
+                                        <img src="../../../public/clock.svg" />
                                     </div>
                                     <span>
                                         {restaurant.prepareTime}
