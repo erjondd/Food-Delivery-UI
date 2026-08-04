@@ -2,7 +2,7 @@
 export const RESTAURANTS = [
     {
         title: "Royal Sushi House",
-        imageUrl: "src/assets/royal-sushi.png",
+        imageUrl: "../../public/assets/royal-sushi-house.png",
         isFeatures: true,
         cartItems: 0,
         prepareTime: "30-40 min",
@@ -17,7 +17,7 @@ export const RESTAURANTS = [
     },
     {
         title: "Burgers & Pizza",
-        imageUrl: "src/assets/burger-pizza.png",
+        imageUrl: "../../public/assets/burger-pizza.png",
         isFeatures: true,
         cartItems: 2,
         prepareTime: "40-60 min",
@@ -37,7 +37,7 @@ export const RESTAURANTS = [
     },
     {
         title: "Ninja sushi",
-        imageUrl: "src/assets/ninja-sushi.png",
+        imageUrl: "../../public/assets/ninja-sushi.png",
         isFeatures: false,
         cartItems: 3,
         prepareTime: "20-40 min",
