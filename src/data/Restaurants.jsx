@@ -2,7 +2,7 @@
 export const RESTAURANTS = [
     {
         title: "Royal Sushi House",
-        imageUrl: "/public/royal-sushi-house.png",
+        imageUrl: "/royal-sushi-house.png",
         isFeatures: true,
         cartItems: 0,
         prepareTime: "30-40 min",
@@ -10,7 +10,7 @@ export const RESTAURANTS = [
         categories: [
             {
                 name: "Sushi",
-                imageUrl: "src/assets/sushi.svg",
+                imageUrl: "sushi.svg",
                 active: false,
             }
         ]
@@ -25,19 +25,19 @@ export const RESTAURANTS = [
         categories: [
             {
                 name: "Burger",
-                imageUrl: "src/assets/burger.svg",
+                imageUrl: "burger.svg",
                 active: false,
             },
             {
                 name: "Pizza",
-                imageUrl: "src/assets/pizza.svg",
+                imageUrl: "pizza.svg",
                 active: false,
             }
         ]
     },
     {
         title: "Ninja sushi",
-        imageUrl: "../../public/assets/ninja-sushi.png",
+        imageUrl: "/ninja-sushi.png",
         isFeatures: false,
         cartItems: 3,
         prepareTime: "20-40 min",
@@ -45,14 +45,14 @@ export const RESTAURANTS = [
         categories: [
             {
                 name: "Sushi",
-                imageUrl: "src/assets/sushi.svg",
+                imageUrl: "sushi.svg",
                 active: false,
             },
         ]
     },
     {
         title: "Sushi master",
-        imageUrl: "src/assets/sushi-master.png",
+        imageUrl: "/sushi-master.png",
         isFeatures: false,
         cartItems: 0,
         prepareTime: "60-70 min",
@@ -60,14 +60,14 @@ export const RESTAURANTS = [
         categories: [
             {
                 name: "Sushi",
-                imageUrl: "src/assets/sushi.svg",
+                imageUrl: "sushi.svg",
                 active: false,
             },
         ]
     },
     {
         title: "Japanese sushi",
-        imageUrl: "src/assets/japanese-sushi.png",
+        imageUrl: "/japanese-sushi.png",
         isFeatures: false,
         cartItems: 0,
         prepareTime: "30-50 min",
@@ -75,14 +75,14 @@ export const RESTAURANTS = [
         categories: [
             {
                 name: "Sushi",
-                imageUrl: "src/assets/sushi.svg",
+                imageUrl: "sushi.svg",
                 active: false,
             },
         ]
     },
     {
         title: "Kobe",
-        imageUrl: "src/assets/kobe.png",
+        imageUrl: "/kobe.png",
         isFeatures: false,
         cartItems: 0,
         prepareTime: "20-30 min",
@@ -90,7 +90,7 @@ export const RESTAURANTS = [
         categories: [
             {
                 name: "Sushi",
-                imageUrl: "src/assets/sushi.svg",
+                imageUrl: "sushi.svg",
                 active: false,
             },
         ]
