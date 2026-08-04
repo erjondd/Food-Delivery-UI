@@ -15,6 +15,7 @@ export const CATEGORIES = [
         imageUrl: '../assets/bbq.svg',
         active: false,
     },
+
     {
         name: 'Sushi',
         imageUrl: '../assets/sushi.svg',
